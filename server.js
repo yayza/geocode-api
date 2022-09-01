@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const server = express();
 const location = require("./db/queries");
@@ -16,5 +17,5 @@ server.get("/geo/:city?/:state?", requestHandlers.handleGeoCodeRequest, async (r
 });
 
 server.listen(PORT, () => {
-  console.log("Server started");
+  console.log(`Server started on port ${PORT}`);
 });
