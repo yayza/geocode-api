@@ -10,7 +10,18 @@ To install:
 2. Run `npm install`
 3. When installation is finished, run `npm start` to start your server
 
-You can look up location date using your server url, example: `http://localhost:3000/losangeles/california` (You an also use state abbreviation)
+You can look up location coords using your server url, example:  
+`http://localhost:3000/losangeles/california` <sub>You an also use state abbreviation if you like</sub>
 
+Will return:
+```
+{
+"STATE_NAME": "California",
+"LONGITUDE": -118.247896,
+"LATITUDE": 33.973093,
+"CITY": "Los Angeles",
+"COUNTY": "Los Angeles"
+}
+```
 
 Thanks to @kelvins for his US-Cities-Database dump
